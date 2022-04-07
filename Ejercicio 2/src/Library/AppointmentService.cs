@@ -3,6 +3,9 @@ using System.Text;
 
 namespace Library
 {
+
+    //ESTA CLASE TIENE MAS DE UNA RESPONSABILIDAD, NO DEBERIA TENER QUE CONOCER TODOS LOS DATOS, 
+    // NI CHECKEAR QUE TODOS LOS DATOS SEAN CORRECTOS.
     public class AppointmentService
     {
         public static string CreateAppointment(string name, string id, string phoneNumber, DateTime date, string appoinmentPlace, string doctorName)
