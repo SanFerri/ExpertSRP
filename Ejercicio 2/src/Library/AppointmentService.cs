@@ -3,9 +3,15 @@ using System.Text;
 
 namespace Library
 {
-
-    //ESTA CLASE TIENE MAS DE UNA RESPONSABILIDAD, NO DEBERIA TENER QUE CONOCER TODOS LOS DATOS, 
-    // NI CHECKEAR QUE TODOS LOS DATOS SEAN CORRECTOS.
+    /// <summary>
+    /// El codigo no cumple con el principio SRP, ya que hay mas de 1 razon para cambiar la clase
+    /// la primera es que se podria tener que agregar nuevos valores del paciente como su edad, y
+    /// tambien es posible que en un futuro se precise conocer la especialidad del doctor, ademas de
+    /// que es necesario verificar todos estos datos asi que minimo hay unas 4 razones de cambio.
+    /// 
+    /// Para cumplir con SRP primero crearia 3 clases nuevas, una que sea paciente, una
+    /// appointment y la otra doctor.
+    /// </summary>
     public class AppointmentService
     {
         public static string CreateAppointment(string name, string id, string phoneNumber, DateTime date, string appoinmentPlace, string doctorName)
