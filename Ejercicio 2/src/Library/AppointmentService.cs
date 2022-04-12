@@ -9,8 +9,8 @@ namespace Library
     /// tambien es posible que en un futuro se precise conocer la especialidad del doctor, ademas de
     /// que es necesario verificar todos estos datos asi que minimo hay unas 4 razones de cambio.
     /// 
-    /// Para cumplir con SRP primero crearia 3 clases nuevas, una que sea paciente, una
-    /// appointment y la otra doctor.
+    /// Para cumplir con SRP primero crearia 4 clases nuevas, una que sea paciente, una
+    /// appointment, un validator, y la otra doctor.
     /// </summary>
     public class AppointmentService
     {
