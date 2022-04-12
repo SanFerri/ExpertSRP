@@ -2,6 +2,11 @@ using System;
 
 namespace Library
 {
+    /// <summary>
+    /// ¿Quien debe conocer toda informacion valiosa para un appointment?
+    /// (Identifier, fecha, lugar, paciente, y doctor)
+    /// Por expert deberia ser Appointment, quien crea los appointment.
+    /// </summary>
     public class Appointment
     {
         public string Identifier {get; private set;}

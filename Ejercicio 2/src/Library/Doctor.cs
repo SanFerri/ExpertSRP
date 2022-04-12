@@ -1,5 +1,10 @@
 namespace Library
 {
+    /// <summary>
+    /// ¿Quien debe conocer toda informacion valiosa para un Doctor?
+    /// (Nombre y especializacion)
+    /// Por expert deberia ser Doctor, quien crea los Doctor.
+    /// </summary>
     public class Doctor
     {
         public string Name {get; private set;}

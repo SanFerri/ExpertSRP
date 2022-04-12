@@ -1,5 +1,10 @@
 namespace Library
 {
+    /// <summary>
+    /// ¿Quien debe conocer toda informacion valiosa para un paciente?
+    /// (edad, nombre, y telefono)
+    /// Por expert deberia ser Patient, quien crea al paciente.
+    /// </summary>
     public class Patient
     {
         //t(string name, string id, string phoneNumber, DateTime date, string appoinmentPlace, string 
